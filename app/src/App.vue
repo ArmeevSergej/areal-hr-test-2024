@@ -1,6 +1,5 @@
 <template>
   <div class="app">
-    <!-- Окно с текстом -->
     <div class="hero hero-text">
       <h1 class="title">Добро пожаловать на наш сайт!</h1>
       <p class="subtitle">
@@ -13,7 +12,6 @@
       </p>
       <button class="btn">О нас</button>
     </div>
-    <!-- Окно с кнопками -->
     <div class="hero hero-buttons">
       <h2 class="title-small">Начните работать с нами!</h2>
       <div class="buttons">
@@ -31,24 +29,23 @@ export default {
 </script>
 
 <style scoped>
-/* Общий стиль для приложения */
 .app {
   font-family: "Arial", sans-serif;
   display: flex;
-  flex-direction: column; /* Окна расположены одно под другим */
-  align-items: center; /* Центрирование по горизонтали */
-  gap: 30px; /* Расстояние между окнами */
+  flex-direction: column;
+  align-items: center; 
+  gap: 30px; 
   height: 100vh;
-  background: linear-gradient(135deg, #6e8efb, #a777e3); /* Новый градиентный фон */
+  background: linear-gradient(135deg, #6e8efb, #a777e3);
   background-size: 400% 400%;
-  animation: gradient 10s ease infinite; /* Анимация перелива градиента */
+  animation: gradient 10s ease infinite; 
   color: white;
   text-align: center;
   position: relative;
   padding: 20px;
 }
 
-/* Анимация перелива градиента */
+
 @keyframes gradient {
   0% {
     background-position: 0% 50%;
@@ -61,24 +58,24 @@ export default {
   }
 }
 
-/* Общий стиль для окон */
+
 .hero {
-  background-color: rgba(0, 0, 0, 0.6); /* Темный полупрозрачный фон */
+  background-color: rgba(0, 0, 0, 0.6); 
   padding: 40px;
   border-radius: 15px;
   transition: transform 0.5s ease-in-out, box-shadow 0.3s ease;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-  width: 80%; /* Фиксированная ширина */
-  max-width: 500px; /* Максимальная ширина */
+  width: 80%; 
+  max-width: 500px; 
 }
 
-/* Плавное движение блока при наведении */
+
 .hero:hover {
   transform: translateY(-10px);
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
 }
 
-/* Окно с текстом */
+
 .hero-text .title {
   font-size: 2rem;
   margin-bottom: 15px;
@@ -98,7 +95,7 @@ export default {
   margin-top: 15px;
 }
 
-/* Окно с кнопками */
+
 .hero-buttons .title-small {
   font-size: 1.5rem;
   margin-bottom: 20px;
@@ -115,12 +112,12 @@ export default {
   animation-delay: 1s;
 }
 
-/* Стиль кнопок */
+
 .btn {
   padding: 12px 25px;
   font-size: 1rem;
   color: #fff;
-  background-color: rgba(105, 89, 209, 0.8); /* Новый цвет кнопок */
+  background-color: rgba(105, 89, 209, 0.8); 
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -128,14 +125,14 @@ export default {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Эффект при наведении на кнопки */
+
 .btn:hover {
   background-color: rgb(88, 72, 193);
   transform: translateY(-5px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
-/* Анимация появления элементов */
+
 @keyframes fadeIn {
   from {
     opacity: 0;
